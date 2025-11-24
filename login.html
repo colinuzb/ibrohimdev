@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐋𝐨𝐠𝐢𝐧 - 𝐈𝐛𝐫𝐨𝐡𝐢𝐦𝐃𝐞𝐯 𝐒𝐭𝐨𝐫𝐞</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">𝐈𝐛𝐫𝐨𝐡𝐢𝐦𝐃𝐞𝐯</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">𝐇𝐨𝐦𝐞</a></li>
+                <li><a href="book.html">𝐁𝐨𝐨𝐤𝐬</a></li>
+                <li><a href="game.html">𝐆𝐚𝐦𝐞𝐬</a></li>
+                <li><a href="app.html">𝐀𝐩𝐩𝐬</a></li>
+                <li><a href="picture.html">𝐖𝐚𝐥𝐥𝐩𝐚𝐩𝐞𝐫a></li>
+                <li><a href="login.html" class="btn-nav active">𝐋𝐨𝐠𝐢𝐧</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="login-container">
+        <div class="login-box">
+            <div class="login-tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="register">Register</button>
+            </div>
+
+            <form id="loginForm" class="login-form active" data-form="login">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    <div class="input-border"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    <div class="input-border"></div>
+                </div>
+
+                <button type="submit" class="btn-login">Sign In</button>
+                <p class="form-link">Don't have an account? <a href="#" onclick="switchTab('register')">Register</a></p>
+            </form>
+
+            <form id="registerForm" class="login-form" data-form="register">
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" placeholder="Enter your name" required>
+                    <div class="input-border"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" placeholder="Enter your email" required>
+                    <div class="input-border"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" placeholder="Enter your password" required>
+                    <div class="input-border"></div>
+                </div>
+
+                <button type="submit" class="btn-login">Create Account</button>
+                <p class="form-link">Already have an account? <a href="#" onclick="switchTab('login')">Login</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>𝐀𝐛𝐨𝐮𝐭</h4>
+                <p>𝐅𝐮𝐥𝐥-𝐒𝐭𝐚𝐜𝐤 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐈𝐛𝐫𝐨𝐡𝐢𝐦𝐃𝐞𝐯.</p>
+            </div>
+            <div class="footer-section">
+                <h4>𝐐𝐮𝐢𝐜𝐤 𝐋𝐢𝐧𝐤𝐬</h4>
+                <ul>
+                    <li><a href="index.html">𝐇𝐨𝐦𝐞</a></li>
+                    <li><a href="book.html">𝐁𝐨𝐨𝐤𝐬</a></li>
+                    <li><a href="login.html">𝐀𝐜𝐜𝐨𝐮𝐧𝐭</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>𝐂𝐨𝐧𝐭𝐚𝐜𝐭</h4>
+                <p>𝐢𝐛𝐫𝐨𝐡𝐢𝐦𝐬𝐞𝐦@𝐠𝐦𝐚𝐢𝐥.𝐜𝐨𝐦</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 𝟐𝟎𝟐𝟓 𝐈𝐛𝐫𝐨𝐡𝐢𝐦𝐃𝐞𝐯. 𝐀𝐥𝐥 𝐫𝐢𝐠𝐡𝐭𝐬 𝐫𝐞𝐬𝐞𝐫𝐯𝐞𝐝.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
